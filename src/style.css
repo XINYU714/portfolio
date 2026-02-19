@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #222831;
+  --color-secondary: #31363F;
+  --color-accent: #94B4C1;
+  --color-light: #EAE0CF;
+  --color-text: #EEEEEE;
+  --color-background: #31363F;
+}
+
+@layer base {
+  body {
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    font-style: normal;
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+}
+
+@layer components {
+  .text-body {
+    @apply text-base font-normal leading-normal;
+  }
+
+  .page-project {
+    background-image: radial-gradient(#444 0.8px, transparent 0.8px), radial-gradient(#444 0.8px, var(--color-background) 0.8px);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+  }
+
+}
