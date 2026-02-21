@@ -47,15 +47,20 @@ export type ArticleItem =
   | ArticleSubtitleItem
   | ArticleQuoteItem;
 
+export interface ProjectWebsite {
+  type: string;
+  url: string;
+}
+
 export interface ProjectItem {
-  id: number;
+  id: string;
   title: string;
   description: string;
   image: string;
-  path: string;
   tags: string[];
   date: string;
   itemList: ArticleItem[];
+  website?: ProjectWebsite[];
 }
 
 export interface ExperienceItem {

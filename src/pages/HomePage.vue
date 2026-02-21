@@ -2,7 +2,8 @@
 import ProjectCard from '@/components/ProjectCard.vue';
 import ExperienceCard from '@/components/ExperienceCard.vue';
 import type { ExperienceItem } from '@/types';
-import { EXPERIENCE_MAP, PROJECT_LIST } from '@/utils/constant';
+import { PROJECT_LIST } from '@/constants/project';
+import { EXPERIENCE_MAP } from '@/constants/experience';
     
 const experienceList: ExperienceItem[] = [
   {
@@ -51,8 +52,8 @@ const experienceList: ExperienceItem[] = [
       <!-- 專案區 -->
       <section class="my-10">
         <h2 class="text-xl font-bold text-light mb-5">專案分享 | Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <router-link v-for="item in PROJECT_LIST" :key="item.id" :to="item.path">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <router-link v-for="item in PROJECT_LIST" :key="item.id" :to="`/project/${item.id}`">
                 <ProjectCard :item="item" />
             </router-link>
         </div>
