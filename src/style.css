@@ -1,20 +1,37 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary: #222831;
-  --color-secondary: #31363F;
-  --color-accent: #94B4C1;
-  --color-light: #EAE0CF;
-  --color-text: #EEEEEE;
-  --color-background: #31363F;
+  --color-primary: #DCE6EF;
+  --color-secondary: #F3F6FA;
+  --color-accent: #3B6F8B;
+  --color-light: #1F2937;
+  --color-text: #111827;
+  --color-background: #FFFFFF;
+  --color-muted: #6B7280;
+  --color-contrast: #FFFFFF;
+  --color-dot: #D1D9E2;
 }
 
 @layer base {
+  html.dark {
+    --color-primary: #222831;
+    --color-secondary: #31363F;
+    --color-accent: #94B4C1;
+    --color-light: #EAE0CF;
+    --color-text: #EEEEEE;
+    --color-background: #31363F;
+    --color-muted: #9CA3AF;
+    --color-contrast: #FFFFFF;
+    --color-dot: #444444;
+  }
+
   body {
     font-family: 'Roboto', 'Noto Sans TC', sans-serif;
     font-style: normal;
     color: var(--color-text);
     background-color: var(--color-background);
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
 }
 
@@ -24,7 +41,7 @@
   }
 
   .page-project {
-    background-image: radial-gradient(#444 0.8px, transparent 0.8px), radial-gradient(#444 0.8px, var(--color-background) 0.8px);
+    background-image: radial-gradient(var(--color-dot) 0.8px, transparent 0.8px), radial-gradient(var(--color-dot) 0.8px, var(--color-background) 0.8px);
     background-size: 32px 32px;
     background-position: 0 0, 16px 16px;
   }
