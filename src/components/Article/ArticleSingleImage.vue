@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import type { ArticleItem } from '@/types';
+import type { ArticleImageItem } from '@/types'
 
-const props = defineProps<ArticleItem>()
+defineProps<ArticleImageItem>()
 </script>
 <template>
     <figure>
