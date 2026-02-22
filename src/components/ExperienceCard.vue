@@ -6,7 +6,7 @@ const props = defineProps<ExperienceItem>()
 <template>
   <div class="relative pb-5 last:pb-0">
     <div>
-      <h3 class="text-2xl font-bold">{{ jobTitle }}<span class="text-sm font-normal text-muted pl-3">{{ date }}</span></h3>
+      <h3 class="text-2xl font-bold">{{ jobTitle }}<br class="block lg:hidden"><span class="text-sm font-normal text-muted lg:pl-3">{{ date }}</span></h3>
       <div class="mt-4 space-y-4">
         <!-- 總結 -->
         <p class="text-body" v-html="description.summary"></p>

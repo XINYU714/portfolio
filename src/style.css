@@ -37,7 +37,7 @@
 
 @layer components {
   .text-body {
-    @apply text-base font-normal leading-normal;
+    @apply text-base font-normal leading-relaxed tracking-wide;
   }
 
   .page-project {
@@ -46,4 +46,15 @@
     background-position: 0 0, 16px 16px;
   }
 
+  .main-button {
+    @apply flex items-center gap-2 w-fit bg-primary text-light p-4 rounded-md mt-10 hover:bg-accent hover:text-white transition-colors;
+  }
+
+  .outlined-button {
+    @apply flex items-center gap-2 border rounded-md border-accent px-4 py-2 text-accent transition-colors hover:bg-accent hover:text-contrast;
+  }
+
+  .main-container {
+    @apply container mx-auto px-5 lg:px-10;
+  }
 }

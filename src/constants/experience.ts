@@ -4,7 +4,7 @@ export const EXPERIENCE_List = [
     id: 'mx',
     jobTitle: '前端工程師 | 創意思境 MX',
     date: '2023/03 - 在職中',
-    skills: ['Vue', 'Vuetify', 'Pinia','Tailwind CSS', 'Stylus', 'GSAP', 'Vite', 'Webpack'],
+    skills: ['Vue', 'Vuetify', 'Pinia','Tailwind CSS', 'Stylus', 'GSAP', 'Vite', 'Webpack', 'Pug'],
     description: {
       summary: '主導多項網站開發與維運，包含<b>品牌官網、後台系統、動效網頁</b>，致力於建構<span class="text-accent font-bold">高性能、模組化</span>的 Web 解決方案。',
       sections: [

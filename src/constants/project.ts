@@ -14,7 +14,6 @@ export const PROJECT_LIST: ProjectItem[] = [
     image: joinToEnjoy,
     tags: ['Vue', 'Vuetify', 'Chart.js', 'Pinia', 'CI/CD'],
     date: '2024/11 ~ 進行中',
-    // website: [{ type: 'official', url: 'https://www.jointoenjoy.com/' }],
     itemList: [
       {
         type: 'title',
@@ -22,7 +21,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：需解決測驗後的「解測預約」流程碎片化問題，需要建立一套支持多機構的排程系統，必須在既有的權限架構下，精確關聯不同企業客戶、對應的心理諮商所及其所屬心理師，並確保管理端能高效調度會議室與時間資源，同時與前台預約端達成數據同步。'
+        content: '挑戰：為了解決優勢韌力測驗後的「解測預約」流程碎片化問題，需要建立一套支持多機構的排程系統，在既有的權限架構下，精確關聯不同企業客戶、對應的心理諮商所及其所屬心理師，並確保管理端能自行調整會議室與時間資源，同時與前台預約平台達成數據同步。'
       },
       {
         type: 'subtitle',
@@ -30,7 +29,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '透過既有的權限架構，新增諮商所與心理師綁定的關係，確保管理者能根據企業屬性自動篩選對應的諮商所與心理師名單，並且同步於前台預約平台，讓管理人員能掌握解測進度。'
+        content: '透過既有的權限架構，新增諮商所與心理師綁定的關係，確保管理者能根據企業屬性自動篩選對應的諮商所與心理師名單，並且同步於前台預約平台，讓管理人員能掌握解測預約進度。'
       },
       {
         type: 'subtitle',
@@ -63,7 +62,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '實施代碼分割（Code Splitting）策略，僅在使用者切換至特定頁面時才加載對應圖表，減少初始加載體積。',
+        content: '實施程式碼分割策略，僅在使用者切換至特定頁面時才加載對應圖表，減少初始加載體積。',
       },
       {
         type: 'subtitle',
@@ -71,7 +70,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '將圖表邏輯封裝為高可複用性的通用組件，與後端討論資料格式，實現前後台系統間的代碼共享。',
+        content: '將圖表邏輯封裝為高可複用性的通用組件，與後端討論傳輸資料格式，實現前後台系統間的組件交互共享。',
       },
       {
         type: 'subtitle',
@@ -155,6 +154,11 @@ export const PROJECT_LIST: ProjectItem[] = [
       {
         type: 'content',
         content: '成功將第三方問卷需求移轉至自有平台，達成 All-in-one 的整合目標，降低了組織的跨系統管理成本，並且解決業務需求，透過拖拽式 UI 設計，顯著優化了問卷製作的流程，獲得後台管理使用者的高度滿意。',
+      },
+      {
+        type: 'link',
+        content: '更多關於練息場',
+        path: 'https://www.jointoenjoy.com/',
       },
     ]
   },
