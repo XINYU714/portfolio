@@ -8,6 +8,8 @@ import solc from '@/assets/img/projects/solc-cover.jpg';
 import mx from '@/assets/img/projects/mx-cover.jpg';
 import mxDesign from '@/assets/img/projects/mx-design.png';
 import moonShare from '@/assets/img/projects/moon-share.png';
+import saving from '@/assets/img/projects/saving-cover.jpg';
+import savingLayout from '@/assets/img/projects/saving.png'
 
 
 export const PROJECT_LIST: ProjectItem[] = [
@@ -726,13 +728,29 @@ export const PROJECT_LIST: ProjectItem[] = [
   },
   {
     id: 'my-record',
-    title: 'Side Project 儲蓄管理',
+    title: 'Side Project 儲蓄管理 | 開發中',
     date: '2025/11',
-    description: '使用 React、Typescript、MUI開發，在日常生活中有時候都需要記帳。',
-    image: '',
-    tags: ['React', 'Typescript', 'MUI'],
+    description: '使用 React、Typescript、MUI 、Supabase 開發，在日常生活中有時候都需要記帳。從原來試算表的轉移至此，自動生成相關圖表以及考量安全性問題，有限制白名單，確保非名單人員使用此儲蓄管理。',
+    image: saving,
+    tags: ['React', 'Typescript', 'MUI', 'Supabase', 'MCP'],
     itemList: [
-
+      {
+        type: 'title',
+        content: '起始：建立 Supabase 與 架構設定'
+      },
+      {
+        type: 'quote',
+        content: '使用 React + TS + MUI 開發，並且在 Supabase MCP 的協助下，使用 Supabase 的功能建立資料表與 Magic Link。'
+      },
+      {
+        type: 'content',
+        content: '在日常生活中，偶爾需要記帳當月的支出，在不頻繁的更新下，目標是採用「月」來統計個銀行帳號的餘額，並有圖表可以觀察各個銀行的分佈狀態，除了最重要的儲蓄管理功能，未來可在設定中自定義銀行分類、色系。'
+      },
+      {
+        type: 'image',
+        content: '目前介面設計（待優化）',
+        path: savingLayout
+      }
     ],
   }
 ];
