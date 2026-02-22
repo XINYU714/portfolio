@@ -5,12 +5,16 @@ import club from '@/assets/img/projects/club-cover.jpg';
 import lifeStyle from '@/assets/img/projects/life-style-cover.jpg';
 import ican from '@/assets/img/projects/ican-cover.png';
 import solc from '@/assets/img/projects/solc-cover.jpg';
+import mx from '@/assets/img/projects/mx-cover.jpg';
+import mxDesign from '@/assets/img/projects/mx-design.png';
+import moonShare from '@/assets/img/projects/moon-share.png';
+
 
 export const PROJECT_LIST: ProjectItem[] = [
   {
     id: 'join-to-enjoy',
     title: '優勢韌力探索平台 | 從 0 到 1 建置 B2B 平台',
-    description: '透過專業量表來自我探索的平台，整合「優勢韌力測驗」、「預約排程」、「數據報表」等功能，一站式平台解決原本人工填寫、排程、報表分散不同地方的痛點。',
+    description: '透過線上優勢韌力專業量表來自我探索，整合「優勢韌力測驗」、「預約排程」、「數據報表」等功能，一站式平台解決原本由人工填寫、排程、報表分散不同地方的痛點。',
     image: joinToEnjoy,
     tags: ['Vue', 'Vuetify', 'Chart.js', 'Pinia', 'CI/CD'],
     date: '2024/11 ~ 進行中',
@@ -21,7 +25,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：為了解決優勢韌力測驗後的「解測預約」流程碎片化問題，需要建立一套支持多機構的排程系統，在既有的權限架構下，精確關聯不同企業客戶、對應的心理諮商所及其所屬心理師，並確保管理端能自行調整會議室與時間資源，同時與前台預約平台達成數據同步。'
+        content: '挑戰：為了解決優勢韌力測驗後的「解測預約」流程碎片化問題，需要建立一套支持多企業的排程系統，在既有的權限架構下，精確關聯不同企業客戶、對應的心理諮商所及其所屬心理師，確保管理者能自行調整會議室與時間資源，並實現與前台預約平台數據同步。'
       },
       {
         type: 'subtitle',
@@ -29,7 +33,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '透過既有的權限架構，新增諮商所與心理師綁定的關係，確保管理者能根據企業屬性自動篩選對應的諮商所與心理師名單，並且同步於前台預約平台，讓管理人員能掌握解測預約進度。'
+        content: '透過既有的權限架構（角色、帳號），新增諮商所與心理師綁定的關係，確保管理者能根據企業的設定自動篩選對應諮商所與心理師名單，並且同步於前台預約平台，讓管理人員、人資能掌握解測預約進度。'
       },
       {
         type: 'subtitle',
@@ -37,7 +41,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '開發後台排程功能，整合起始日期、會議室資源與心理師排班設定，提供直覺的介面讓管理者能快速建立解測時的初始安排。'
+        content: '開發後台排程功能，整合起訖日期、會議室資源與心理師排班設定，提供直覺的介面讓管理者能快速建立解測的前期建置。'
       },
       {
         type: 'subtitle',
@@ -54,7 +58,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：該專案需呈現多維度數據（如圓餅圖、條狀圖、雷達圖），若一次性載入大量 Chart.js 函式庫與圖表組件，將導致首屏載入過慢，且前後台重複開發相同圖表亦會增加維護成本與代碼冗餘。'
+        content: '挑戰：該專案需呈現多維度數據（如圓餅圖、條狀圖、雷達圖），若一次性載入大量 Chart.js 函式庫與圖表組件，將導致首屏載入過慢，且前後台相同圖表分別使用亦會增加維護成本。'
       },
       {
         type: 'subtitle',
@@ -70,7 +74,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '將圖表邏輯封裝為高可複用性的通用組件，與後端討論傳輸資料格式，實現前後台系統間的組件交互共享。',
+        content: '將圖表邏輯封裝為高可複用性的通用組件，與後端討論傳輸資料格式，實現前後台系統間的組件共享。',
       },
       {
         type: 'subtitle',
@@ -78,7 +82,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '結合 IntersectionObserver API 與 Chart.js 實作「視口觸發動畫」，確保圖表僅在進入使用者視野時才執行繪製動畫。',
+        content: '結合 IntersectionObserver API 與 Chart.js 實作「視口觸發動畫」，確保圖表僅在進入使用者視野時才執行繪製圖表動畫。',
       },
       {
         type: 'subtitle',
@@ -87,7 +91,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '在兼顧數據圖表閱讀的趣味性透過按需載入有效降低首屏資源請求量，顯著提升網頁渲染效能與使用者體驗，並且透過組件化設技能減少一半重複開發時間，大幅提高後期維護的一致性。'
+        content: '兼顧數據圖表閱讀趣味性的同時，透過按需載入有效降低首屏資源請求量，顯著提升網頁渲染效能與使用者體驗，並且透過組件化設計減少一半重複開發時間，大幅提升後期維護成本。'
       },
       {
         type: 'title',
@@ -95,7 +99,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：原專案採用 Vuetify 預設的 Icon Fonts 載入方式，雖便於開發，但會導致瀏覽器在初始階段載入完整的 Material Design Icons 字體包。這種「全量載入」的模式造成了不必要的網路頻寬浪費，成為首屏載入效能的瓶頸，影響了 LCP（最大內容繪製）等關鍵性能指標。'
+        content: '挑戰：原專案採用 Vuetify 預設的 Icon Fonts 載入方式，雖便於開發，但會導致瀏覽器在初始階段載入完整的 Material Design Icons 字體包。這種「全量載入」的模式造成了不必要的資源浪費，成為首屏載入效能的瓶頸，影響了網站效能的指標。'
       },
       {
         type: 'subtitle',
@@ -103,7 +107,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '廢除傳統全量 Font 引入，改採 @mdi/js 的 SVG 常量載入方案，建立專門的 icon.js 管理模組，採取「集中宣告、統一導出」的架構，確保專案中使用的所有圖標皆有跡可循。'
+        content: '廢除 Material Design Icons Font 引入，使用 @mdi/js 的 SVG 載入方案，建立專門管理icon 的 icon.js，透過「集中宣告、統一導出」的架構，確保專案中使用的所有圖標皆有跡可循。'
       },
       {
         type: 'subtitle',
@@ -120,7 +124,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '在程式方面，透過集中化的管理模式，讓圖標的重用與更換更加透明化，避免了程式碼中出現冗餘或重複定義的情況。而在網頁效能方面，成功將圖標相關的初始載入資源體積降低 50% 以上，顯著提升了網站的加載速度。'
+        content: '在程式方面，透過集中化的管理模式，讓圖標的重用與更換更加透明化，避免了程式碼中出現多餘或重複定義的情況。而在網頁效能方面，成功將圖標相關的<span class="text-accent">初始載入資源體積降低 50% 以上</span>，顯著提升了網站的加載速度。'
       },
       {
         type: 'title',
@@ -128,7 +132,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：將原本分散於外部系統的問卷功能整合至自有平台，以實現數據一站式管理。挑戰在於需要建立一個靈活的後台系統，支持多樣化的題型（單選、多選、量表、簡答），並在確保操作流暢性的同時，處理複雜的 CRUD（增刪改查）邏輯與填答數據的可視化。'
+        content: '挑戰：將原本分散於外部系統的問卷功能整合至該平台，以實現一站式管理。需要建立一個靈活的後台系統，支持多樣化的題型（單選、多選、量表、簡答），並確保操作流暢性的同時，處理複雜的 CRUD 邏輯與填答數據的可視化。'
       },
       {
         type: 'subtitle',
@@ -136,7 +140,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '設計具擴展性的數據結構，統一管理單選、多選、程度題及簡答題等多種題型，並實現後台自定義配置功能。同時，搭配 vuedraggable 實作拖拽式介面，讓管理者能直覺地調整題目順序，大幅提升後台操作的流暢度與效率。'
+        content: '設計具擴展性的架構，統一管理單選、多選、程度題及簡答題等多種題型，管理者能在後台自定義配置。同時，搭配 vuedraggable 實作拖拽式介面，讓管理者能直覺地調整題目順序，大幅提升後台操作的流暢度與效率。'
       },
       {
         type: 'subtitle',
@@ -153,22 +157,31 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '成功將第三方問卷需求移轉至自有平台，達成 All-in-one 的整合目標，降低了組織的跨系統管理成本，並且解決業務需求，透過拖拽式 UI 設計，顯著優化了問卷製作的流程，獲得後台管理使用者的高度滿意。',
+        content: '成功將第三方問卷需求移轉至自有平台，達成 All-in-one 的整合目標，降低了組織的跨系統管理成本與解決業務需求，透過拖拽式 UI 設計，顯著優化了問卷製作的流程，獲得後台管理使用者的高度滿意。',
+      },
+      {
+        type: 'title',
+        content: '未來長期維運的準備'
+      },
+      {
+        type: 'content',
+        content: '因後續頻繁維運的需求，為簡化開發流程而設定了 CI/CD，只要推版即立即更新測試站，減去拖曳上傳檔案的瑣碎時間，同時為後續開發人員能專注於功能修改。'
       },
       {
         type: 'link',
-        content: '更多關於練息場',
+        content: '更多關於練息場官網',
         path: 'https://www.jointoenjoy.com/',
       },
+      
     ]
   },
   {
     id: 'sing-to-the-moon',
     title: 'Sing to the Moon | AI 生成音樂中秋體驗',
-    description: '在 2024 年的中秋節，推出了一款由 AI 生成的數位音樂體驗，透過 AI 生成的音樂（Suno）與生命靈數，打造屬於個人的「人生主題曲」，為品牌帶來新的送禮體驗。',
+    description: '在 2024 年的中秋節，推出了一款由 AI 生成的數位音樂體驗，透過 AI 生成的音樂（Suno）與生命靈數的結合，打造屬於個人的「人生主題曲」，為品牌帶來新的送禮體驗。',
     image: singToTheMoon,
-    website: [{ type: 'official', url: 'https://moon2024.mxlab.space/' }],
-    tags: ['Vue', 'Pinia', 'Vue-router', 'Tailwind', 'Vite'],
+    // website: [{ type: 'official', url: 'https://moon2024.mxlab.space/' }],
+    tags: ['Vue', 'Pinia', 'Vue-router', 'Tailwind CSS', 'Vite'],
     date: '2024/09',
     itemList: [
       {
@@ -177,15 +190,15 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '重新定義「送禮」的意義，將線下禮盒延伸至線上數位體驗。挑戰如何利用 AI 生成技術（Suno）打造一個高度個人化且具備社群擴散力的網站，並克服 AI 生成音樂時的等待時間，維持使用者在流程中的高留存率與互動感。',
+        content: '挑戰：重新定義「送禮」的意義，將線下禮盒延伸至線上數位體驗，如何利用 AI 生成技術（Suno）打造一個個人化且具備社群擴散力的網站，同時需要克服等待 AI 生成音樂的漫長時間裡，維持使用者高留存率與互動感。',
       },
       {
         type: 'subtitle',
-        content: '前端架構與狀態管理',
+        content: '架構選擇與狀態管理',
       },
       {
         type: 'content',
-        content: '使用 Vue 搭配 Pinia 構建高性能的前端架構，儲存使用者輸入（生命靈數、音樂風格）與 AI 生成狀態的資料流。',
+        content: '使用 Vue 搭配 Pinia 構建高性能的前端架構，用來儲存使用者輸入（生命靈數、音樂風格）與 AI 生成狀態的資料流。',
       },
       {
         type: 'subtitle',
@@ -193,7 +206,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '設計動態視覺特效與個人化內容展示（如生命靈數解析），巧妙填充 AI 運算音樂的空白時間，將技術延遲轉化為品牌故事的沉浸體驗。',
+        content: '設計動態視覺效果搭配個人化內容展示（生命靈數解析），巧妙地運用 AI 運算音樂的空白時間，轉化為生命靈數探索的沉浸體驗。',
       },
       {
         type: 'subtitle',
@@ -202,6 +215,11 @@ export const PROJECT_LIST: ProjectItem[] = [
       {
         type: 'content',
         content: '透過社群分享機制與 EDM 發送，將線下限量 80 份禮盒的影響力，透過「專屬人生主題曲」的線上分享功能，達成跨平台傳播。',
+      },
+      {
+        type: 'image',
+        content: '分享至社群平台讓大家體驗創造個人主題曲！',
+        path: moonShare
       },
       {
         type: 'subtitle',
@@ -244,13 +262,18 @@ export const PROJECT_LIST: ProjectItem[] = [
       {
         type: 'content',
         content: '透過雙重驗證機制，確保收錄用戶數據具備高品質且具備真實性，並同時有效防堵惡意成本的支出'
-      }
+      },
+      {
+        type: 'link',
+        content: '更多專案介紹',
+        path: 'https://mx-digi.com/works/moon2024'
+      },
     ]
   },
   {
     id: 'cp',
     title: 'CLUB Panasonic 會員俱樂部 | 會員系統 X CMS後台管理',
-    description: '從 0 到 1 打造以「會員服務」為核心的品牌平台，專注於提升會員體驗（UX）與資料處理的穩定性。全方位會員中心：實作會員加入流程、第三方登入綁定、心得投稿系統、線上報修表單、個人資料編輯CMS 後台開發：針對前台需求建置專屬管理模組，實作文章上稿、心得審核、訊息通知管理等客製化功能。',
+    description: '從 0 到 1 打造以「會員服務」為核心的品牌平台，專注於提升會員體驗（UX）與資料處理的穩定性。打造全方位的會員中心，包含：會員加入、第三方登入 / 綁定、心得投稿系統、線上報修表單、個人資料編輯等等，後台管理系統開發：針對前台客戶需求建置專屬的管理模組，像是文章上稿、心得審核、訊息通知管理等客製化功能。',
     image: club,
     date: '2023/10 ~ 進行中',
     website: [{ type: 'official', url: 'https://club.panasonic.tw' }],
@@ -290,7 +313,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '整合 vue-m-message 套件，根據 API 異步請求結果即時觸發對應的訊息提示，透過細膩的視覺反饋優化使用者填表體驗。',
+        content: '使用 vue-m-message 套件，根據 API 異步請求結果即時觸發對應的訊息提示，透過明確的視覺反饋優化使用者體驗。',
       },
       {
         type: 'subtitle',
@@ -298,7 +321,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '在敏感操作頁面實作圖形驗證碼機制，透過人工輸入校驗防止自動化腳本攻擊，保障會員資料傳遞的安全。'
+        content: '在敏感操作頁面實作圖形驗證碼機制，透過手動輸入校驗防止自動化腳本攻擊，保障會員資料傳遞的安全。'
       },
       {
         type: 'subtitle',
@@ -307,7 +330,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '透過組件化開發模式，雖然一開始需要花時間初始化建置，但後續新頁面開發可以重複使用，將新頁面的開發時程大幅縮短<span class="text-accent"> 50% </span>，達成全站表單樣式與結構統一，並且搭配完善的驗證與即時回饋機制，除了能控管資料的處理，同時也提升了使用者體驗，為品牌會員打造了一個美好的體驗。'
+        content: '透過組件化開發模式，雖然一開始需要花時間初始化建置，但也建立了組件的複用性與可擴充性。為後續相關表單頁面的開發時程大幅縮短<span class="text-accent"> 50% </span>，達成全站表單樣式與結構統一，並且搭配完善的驗證與即時回饋機制，除了能控管資料的處理，同時也為品牌會員打造一個美好的網站體驗。'
       },
       {
         type: 'title',
@@ -315,7 +338,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：擁有大量頁面的品牌會員系統中，必須確保敏感頁面的訪問權限。挑戰在於如何建立一套嚴密的權限控管機制，根據會員登入狀態動態控管路由，同時需優化使用者資料的獲取流程，避免在頁面切換間重複呼叫 API，以維持系統的高效能與資料一致性。',
+        content: '挑戰：擁有大量頁面的品牌會員系統中，必須確保敏感頁面的訪問權限。如何建立一套嚴密的權限控管機制，根據會員登入狀態動態控管路由，同時需優化使用者資料的獲取流程，避免在頁面切換間重複呼叫 API，以維持系統的高效能與資料一致性。',
       },
       {
         type: 'subtitle',
@@ -331,7 +354,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '整合 Vuex 建立用戶狀態中心，將 Fetch 後的用戶資料存儲於 Store 中，實作「一次獲取、全域共用」的資料流架構。同時，根據 Store 的狀態決定是否發送 AP，有效大幅減少冗餘的網絡連線與後端負擔。',
+        content: '整合 Vuex 建立用戶狀態中心，將 Fetch 後的用戶資料存儲於 Store 中，實作「一次獲取、全域共用」的資料架構。同時，根據 Store 的狀態決定是否發送 API ，有效大幅減少多餘的網絡連線與後端負擔。',
       },
       {
         type: 'subtitle',
@@ -340,11 +363,11 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '建構前端第一道防禦線，確保會員專屬功能與敏感資料不會因直接輸入網址而洩漏。透過上述提及的 API 請求優化，讓系統在大量用戶同時存取下仍能維持穩定運作，通過品牌的壓力測試。'
+        content: '建立前端第一道防禦線，確保會員專屬功能與敏感資料不會隨意洩漏。透過上述提及的 API 請求優化，讓系統在大量用戶同時存取下仍能維持穩定運作，通過品牌每年的壓力測試。'
       },
       {
         type: 'title',
-        content: '後台管理系統 | 高度客製化 CMS 與模組化管理系統'
+        content: '後台系統 | 高度客製化 CMS 與模組化管理'
       },
       {
         type: 'content',
@@ -352,7 +375,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：為滿足客戶多元的營運需求（如首頁輪播、活動頁面、電子票券管理、問卷系統等），需打造一套功能全面且具備高度彈性的後台系統。如何設計一套通用的「上稿與編輯邏輯」，讓非技術背景的管理者能自主建構複雜的前台內容，同時確保後台操作的易用性與前台呈現的一致性。',
+        content: '挑戰：為滿足客戶多元的營運需求（如首頁輪播、活動頁面、電子票券管理、問卷系統等），需打造一套功能全面且具備高度彈性的後台系統。如何設計一套通用的「上稿與編輯邏輯」，讓非技術背景的管理者能自主建立複雜與多樣的前台內容，同時需要確保後台操作的易用性與前台呈現的一致性。',
       },
       {
         type: 'subtitle',
@@ -360,7 +383,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '將管理單元按照需求分類並且統一列表與編輯頁面邏輯，以利後續後台開發與操作的一致性。同時針對複用組件模組化，像是開發拖拽式區塊模組，支持圖片、標題、左右圖文等多元佈件的自由組合。',
+        content: '將管理單元按照需求分類並且統一列表與編輯頁面邏輯，以利後續後台開發與操作的一致性。同時針對複用組件模組化，像是開發拖拽式區塊模組，支持圖片、標題、左右圖文等多樣元件的自由組合，或是常使用到的 Input、Textarea、Select 組件化。',
       },
       {
         type: 'subtitle',
@@ -377,7 +400,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '透過高度自主的 CMS 系統，客戶能自行處理多數網站內容的更新，減少了開發團隊支援的頻率。在未來的後台新單元建置，開發時程減少了約 50%，展現了極高的系統擴展性。',
+        content: '透過高度自主的 CMS 系統，客戶能自行處理多數網站內容的更新，減少了開發團隊支援的頻率。在未來的後台新單元建置，開發時程減少了約<span class="text-accent">50%</span>，展現了極高的系統擴展性。',
       }
     ]
   },
@@ -385,7 +408,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     id: 'life-style',
     title: 'Panasonic 住空間美學 | 品牌網站建置 x 風格測驗',
     date: '2023/02 ~ 2025/12',
-    description: '為松下住空間美學建置品牌網站，並開發風格測驗功能，提升使用者互動與品牌體驗。', //TODO
+    description: '起初為松下住空間美學建置動效品牌網站，於後期的業務需求新增風格測驗單元，透過技術遷移加速開發流程，兼具使用者互動與品牌體驗。', 
     image: lifeStyle,
     tags: ['Vue', 'Pinia', 'Vite', 'Webpack', 'Stylus', 'GSAP', 'Pug'],
     website: [
@@ -398,7 +421,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：將原本靜態的品牌網站升級為具備體驗的動態網站。在品牌文案資訊量龐大的情況下，必須在「訊息傳遞清晰度」與「豐富視覺動效」之間取得平衡，確保大量複雜動效不會導致開發流程混亂或後期維護困難。',
+        content: '挑戰：將原本靜態的品牌網站升級為具備體驗的動效網站。在品牌文案資訊量龐大的情況下，必須在「訊息傳遞清晰」與「豐富視覺動效」之間取得平衡，確保複雜的動效不會導致開發流程混亂或後期維護困難。',
       },
       {
         type: 'title',
@@ -410,7 +433,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '運用 GSAP 製作高品質的視差滾動（Parallax）與元素交錯動畫，提升使用者瀏覽時的互動趣味性與品牌質感，並且根據整個網站的動效規劃與設計師的需求，針對高頻率出現的動效需求，將其封裝成可複用的 JavaScript Functions，實現「僅需加入特定 CSS Class 即可觸發動效」的方法，大幅提升開發效率與網站動效的一致性。',
+        content: '運用 GSAP 製作高品質的視差滾動（Parallax）與元素交錯動畫，提升使用者瀏覽時的互動趣味性與品牌質感，並且根據整個網站的動效規劃與設計師期待，針對高頻率出現的動效封裝成可複用的 JavaScript Functions，實現「僅需加入特定 CSS Class 即可觸發動效」的方法，大幅提升開發效率與網站動效的一致性。',
       },
       {
         type: 'subtitle',
@@ -435,7 +458,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：在品牌動態官網的開發過程中，由於設計需求包含大量高解析度圖片與視覺素材，導致網頁加載體積過大（Payload size 過高），顯著影響首屏加載速度。必須在不犧牲視覺品質的前提下，針對圖片資源進行系統性的效能改造，以降低行動裝置用戶的流失率。',
+        content: '挑戰：在品牌動態官網的開發過程中，由於包含大量高解析度圖片與視覺素材，導致網頁加載體積過大（Payload size 過高），顯著影響首屏加載速度。必須在不犧牲視覺品質的前提下，針對圖片資源進行系統性的效能改造，以降低行動裝置用戶的流失率。',
       },
       {
         type: 'subtitle',
@@ -443,7 +466,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '重新對設計端提供的高畫質圖檔進行深度壓縮與格式轉換，在維持視覺無損（Lossless-like）的要求下，大幅削減資源體積，確保在各種網絡環境下皆能快速加載。',
+        content: '重新對設計端提供的高畫質圖檔進行深度壓縮與格式轉換，在維持視覺無損的要求下，大幅削減資源體積，確保在各種網絡環境下皆能快速加載。',
       },
       {
         type: 'subtitle',
@@ -451,7 +474,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '整合 vanilla-lazyload 插件實作延遲加載，並搭配資源請求優先級配置，確保關鍵品牌視覺優先呈現，提升 FMP（首次有效繪製）的感知速度，避免一次性加載所有素材造成頻寬壓力。',
+        content: '整合 vanilla-lazyload 插件實作延遲加載，並搭配資源請求優先級配置，確保關鍵品牌視覺優先呈現，提升 FMP（首次有效繪製）的速度，避免一次性加載所有素材造成頻寬壓力。',
       },
       {
         type: 'subtitle',
@@ -468,7 +491,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：既有的 Webpack/Pug 靜態架構下，需新增一個邏輯複雜的「風格測驗」單元，如何在不影響舊有系統的前提下，導入 Vite + Vue 3 的現代化開發架構，並解決新舊環境間資源（Header/Footer、圖片素材）的共享問題，同時需高效產出十數頁結構相近的測驗結果頁。',
+        content: '挑戰：既有的 Webpack / Pug 靜態架構下，需新增一個「風格測驗」單元，如何在不影響舊有系統的前提下，導入 Vite + Vue 3 的現代化開發架構，並解決新舊環境間資源（Header / Footer、圖片素材）的共享問題，同時需高效產出十數頁結構相近的測驗結果頁。',
       },
       {
         type: 'title',
@@ -496,7 +519,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '採用的「數據驅動」模式，將測驗資料與頁面組件徹底分離。透過集中管理 JSON 資料檔，實現「改資料不改程式碼」的高可維護性架構。'
+        content: '採用「數據驅動」的模式，將測驗資料與頁面組件徹底分離。透過集中管理資料檔，實現「改資料不改程式碼」的高可維護性架構。'
       },
       {
         type: 'subtitle',
@@ -505,7 +528,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '透過模板化與自動化建構流程，將原本需手動開發的 10 餘個頁面工作量，縮減至僅需維護單一模板。採用結構清晰的資料分離設計，讓後續內容迭代無需介入核心邏輯，大幅降低了長期維護的成本。',
+        content: '透過模板化與自動化建構流程，將原本需手動開發的 10 餘個頁面工作量，縮減至僅需維護單一模板。採用結構清晰的資料分離設計，讓後續內容迭代無需修改核心邏輯，大幅降低了長期維護的成本。',
       },
     ],
 
@@ -513,10 +536,11 @@ export const PROJECT_LIST: ProjectItem[] = [
   {
     id: 'ican',
     title: 'ICAN | 品牌高動效官網建置',
-    description: '打造一個動畫體驗與響應式設計有高需求的品牌官網，搭配使用 GSAP 與 Tailwind，針對每個頁面設計的動效需求，提升使用者瀏覽時的互動趣味性與品牌質感。',
+    description: '打造一個動畫體驗與響應式設計有高需求的品牌官網，搭配使用 GSAP 與 Tailwind CSS，針對每個頁面設計的動效需求，提升使用者瀏覽時的互動趣味性與品牌質感。',
     image: ican,
-    tags: ['Pug', 'Stylus', 'Tailwind', 'GSAP', 'Vite'],
+    tags: ['Pug', 'Stylus', 'Tailwind CSS', 'GSAP', 'Vite'],
     date: '2024/02 ~ 2024/03',
+    website: [{ type: 'official', url: 'https://www.ican.com.tw/' }],
     itemList: [
       {
         type: 'title',
@@ -528,11 +552,11 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'subtitle',
-        content: '專業動畫庫整合與模式抽象化',
+        content: '動畫庫整合與模式抽象化',
       },
       {
         type: 'content',
-        content: '引入 GSAP 搭配 ScrollTrigger 建立毫秒級精準度的控制系統。歸納並封裝 4 種通用動畫模式（Fade, Scale-up, Marquee, Full-circle），將複雜參數抽離為標準化的 CSS Class 與數據屬性，確保動效品質與效能。',
+        content: '引入 GSAP 搭配 ScrollTrigger 建立精準的控制。歸納並封裝 4 種通用動畫模式（Fade, Scale-up, Marquee, Full-circle），將複雜參數抽離為標準化的 CSS Class 與數據屬性（data-），確保動效品質與效能。',
       },
       {
         type: 'subtitle',
@@ -582,7 +606,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'quote',
-        content: '挑戰：需頻繁發布至本地、測試站（子路徑）與正式站（根目錄）等不同環境，手動修改 Base Path 路徑極易出錯。且專案包含大量獨立頁面，若缺乏統籌機制，多頁面（MPA）配置將變得分散且難以維護。',
+        content: '挑戰：需頻繁發布至本地、測試站（子路徑）與正式站（根目錄）等不同環境，手動修改 Base Path 路徑極易出錯。且專案包含大量獨立頁面，若缺乏管理機制，多頁面（MPA）配置將變得分散且難以維護。',
       },
       {
         type: 'subtitle',
@@ -594,15 +618,16 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'subtitle',
-        content: '中心化頁面管理與優化 MPA 配置',
+        content: '優化 MPA 配置',
       },
       {
         type: 'content',
-        content: '利用 Vite 虛擬 HTML 結合 EJS 模板，將路由、SEO 與配置集中化，達成「新增頁面僅需一行配置」的自動化流程，即便面對數十個獨立頁面，依然能保持結構整潔與極佳的系統擴展性。同時透過 Vite 的構建鉤子動態生成對應的 HTML 入口，確保多頁面架構在打包過程中的資源引用與路徑正確性。',
+        content: '利用 vite-plugin-virtual-html 結合 EJS 模板，將路由、SEO 與配置集中化，達成「新增頁面僅需一行配置」的自動化流程，即便面對數十個獨立頁面，依然能保持結構整潔與極佳的系統擴展性。同時透過 Vite 的構建鉤子動態生成對應的 HTML 入口，確保多頁面架構在打包過程中的資源引用與路徑正確性。',
       },
       {
         type: 'subtitle',
-        content: '系統擴展性與穩定性'
+        content: '系統擴展性與穩定性',
+        class: 'text-accent'
       },
       {
         type: 'content',
@@ -613,19 +638,19 @@ export const PROJECT_LIST: ProjectItem[] = [
   {
     id: 'solc',
     title: '天主教中華聖母基金會 | 高動效一頁式募款活動網站',
-    description: '在不到一個月的短暫時程內，打造一個具備情感溫度與豐富視覺動效的募款活動網站。透過組件化開發與 GSAP 動效與設計深度協作，還原「家」的氛圍，並整合數據追蹤優化募款成效。',
+    description: '在不到一個月的短暫時程內，打造一個具備情感溫度與豐富視覺動效的募款活動網站。透過組件化開發與 GSAP 動效與設計深度協作，體現「家」的氛圍，並整合數據追蹤募款成效。',
     image: solc,
-    tags: ['Pug', 'Tailwind', 'GSAP', 'Vite', 'GA4'],
+    tags: ['Pug', 'Tailwind CSS', 'GSAP', 'Vite', 'GA4'],
     date: '2025/09',
     website: [{ type: 'official', url: 'https://www.solc.org.tw/love-chiayi-donate' }],
     itemList: [
       {
         type: 'title',
-        content: '情感化敘事一頁式網站開發',
+        content: '情感敘事一頁式網站開發',
       },
       {
         type: 'quote',
-        content: '挑戰：為協助 20 年在地非營利組織進行年度募款，需在極短時程內打造具「家」的情感溫度與豐富動效的募款站。如何在確保高度情感說服力的同時，於緊湊時程內完成複雜動效開發、跨裝置測試及效能優化。',
+        content: '挑戰：為協助 20 年在地非營利組織進行年度募款，需在極短時程內打造具「家」的情感溫度與豐富動效的募款活動網站。如何在確保高度情感說服力的同時，於緊湊時程內完成複雜動效開發、跨裝置測試及效能優化。',
       },
       {
         type: 'subtitle',
@@ -641,7 +666,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '導入 Tailwind 與 Stylus 建立輕量化樣式規範，並實作圖片 WebP 轉換與 Lazy Loading 確保極速加載。同時在關鍵節點埋設 GA4 事件，精準追蹤使用者行為軌跡，為後續內容優化提供數據支持。',
+        content: '導入 Tailwind CSS 與 Stylus 建立輕量化樣式規範，並實作圖片 WebP 轉換與 Lazy Loading 確保極速加載。同時在關鍵節點埋設 GA4 事件，精準追蹤使用者行為軌跡，為後續內容優化提供數據支持。',
       },
       {
         type: 'subtitle',
@@ -653,5 +678,61 @@ export const PROJECT_LIST: ProjectItem[] = [
         class: 'text-accent',
       }
     ]
+  },
+  {
+    id: 'mx',
+    title: 'MX | 官網改版',
+    date: '2024/04 ~ 2025/11',
+    description: '重構現有的官網，將作品頁面轉換具模組化的開發模式，為後續維運打造一套標準化開發流程。',
+    image: mx,
+    website: [{ type: 'official', url: 'https://mx-digi.com/' }],
+    tags: ['Vue', 'Pug', 'Webpack'],
+    itemList: [
+      {
+        type: 'title',
+        content: '高擴展性作品集 CMS 模組化架構'
+      }, 
+      {
+        type: 'quote',
+        content: '挑戰：公司官網因長期未更新導致品牌形象落後，且缺乏統一的作品展示架構。所以如何在短時間內建立一套能相容於未來所有新專案且具備高度彈性的展示模板，讓團隊能快速且大量地產出「作品案例」，同時確保設計風格與開發邏輯的高度一致。'
+      },
+      {
+        type: 'subtitle',
+        content: '定義 CMS 模組化規範與模板'
+      },
+      {
+        type: 'content',
+        content: '與設計師協作，將作品頁面拆解為可配置的區塊（如：標題、多類型圖文組件、影片嵌段），建立類似 CMS（內容管理系統）的動態組件架構。運用 Vue.js 實作高度抽象化的組件庫，根據專案需求靈活拼裝不同功能的區塊'
+      },
+      {
+        type: 'content',
+        content: '建立一套開發者與設計師共同遵循範本，讓未來新增作品時能達成快速開發的流程。'
+      },
+      {
+        type: 'image',
+        content: '每個作品頁面保有該專案的專屬色系',
+        path: mxDesign
+      },
+      {
+        type: 'subtitle',
+        content: '開發產能大幅提升 X 品牌形象升級與維護',
+        class: 'text-accent',
+      },
+      {
+        type: 'content',
+        content: '透過組件化模板，將單一作品頁面的開發時程縮短至僅需原本的 1/3，達成快速累積作品量的商業目標。透過標準化流程降低後續維護的成本。'
+      }
+    ],
+  },
+  {
+    id: 'my-record',
+    title: 'Side Project 儲蓄管理',
+    date: '2025/11',
+    description: '使用 React、Typescript、MUI開發，在日常生活中有時候都需要記帳。',
+    image: '',
+    tags: ['React', 'Typescript', 'MUI'],
+    itemList: [
+
+    ],
   }
 ];
