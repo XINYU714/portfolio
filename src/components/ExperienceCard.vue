@@ -20,8 +20,8 @@ const props = defineProps<ExperienceItem>()
           </div>
         </div>
       </div>
-      <div class="flex flex-wrap gap-2 mt-4">
-        <div v-for="(item, index) in skills" :key="index" class="inline-block px-2 py-1 rounded-full bg-primary text-contrast text-sm">{{ item }}</div>
+      <div class="flex flex-wrap gap-2 mt-5">
+        <div v-for="(item, index) in skills" :key="index" class="tag">{{ item }}</div>
       </div>
     </div>
   </div>

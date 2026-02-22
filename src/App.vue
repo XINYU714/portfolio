@@ -94,8 +94,8 @@ watch(() => route.fullPath, updateHeadMeta)
       :aria-label="themeMode === 'dark' ? '切換為淺色模式' : '切換為深色模式'"
       @click="handleToggleTheme"
     >
-      <img v-if="themeMode === 'dark'" :src="moonIcon" class="" alt="深色模式">
-      <img v-else :src="sunIcon" alt="淺色模式">
+      <img v-if="themeMode === 'dark'" :src="moonIcon" alt="深色模式" width="20" height="20">
+      <img v-else :src="sunIcon" alt="淺色模式" width="20" height="20">
     </button>
     <RouterView />
     <Footer />

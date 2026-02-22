@@ -7,7 +7,7 @@
   --color-accent: #3B6F8B;
   --color-light: #31363F;
   --color-text: #111827;
-  --color-background: #FFFFFF;
+  --color-background: #f8f8f8;
   --color-muted: #6B7280;
   --color-contrast: #31363F;
   --color-dot: #D1D9E2;
@@ -47,14 +47,18 @@
   }
 
   .main-button {
-    @apply flex items-center gap-2 w-fit bg-primary text-light p-4 rounded-md mt-10 hover:bg-accent hover:text-white transition-colors;
+    @apply flex items-center gap-2 w-fit bg-primary text-light p-4 rounded-lg mt-10 hover:bg-accent hover:text-white transition-colors;
   }
 
   .outlined-button {
-    @apply flex items-center gap-2 border rounded-md border-accent px-4 py-2 text-accent transition-colors hover:bg-accent hover:text-contrast;
+    @apply flex items-center gap-2 border rounded-lg border-accent px-4 py-2 text-accent transition-colors hover:bg-accent hover:text-contrast;
   }
 
   .main-container {
     @apply container mx-auto px-5 lg:px-10;
+  }
+
+  .tag {
+    @apply inline-block px-2 py-1 rounded-full bg-primary text-contrast text-sm;
   }
 }
