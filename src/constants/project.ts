@@ -1,14 +1,17 @@
 import type { ProjectItem } from '@/types';
-// 專案描述
+import joinToEnjoy from '@/assets/img/projects/join-to-enjoy-cover.jpg';
+import singToTheMoon from '@/assets/img/projects/sing-to-the-moon-cover.png';
+import club from '@/assets/img/projects/club-cover.jpg';
+import lifeStyle from '@/assets/img/projects/life-style-cover.jpg';
+import ican from '@/assets/img/projects/ican-cover.png';
+import solc from '@/assets/img/projects/solc-cover.jpg';
 
-// type: title, content, image, link, subtitle, quote
 export const PROJECT_LIST: ProjectItem[] = [
   {
-    // id: 1,
     id: 'join-to-enjoy',
     title: '優勢韌力探索平台 | 從 0 到 1 建置 B2B 平台',
     description: '透過專業量表來自我探索的平台，整合「優勢韌力測驗」、「預約排程」、「數據報表」等功能，一站式平台解決原本人工填寫、排程、報表分散不同地方的痛點。',
-    image: '/assets/img/projects/join-to-enjoy-cover.jpg',
+    image: joinToEnjoy,
     tags: ['Vue', 'Vuetify', 'Chart.js', 'Pinia', 'CI/CD'],
     date: '2024/11 ~ 進行中',
     // website: [{ type: 'official', url: 'https://www.jointoenjoy.com/' }],
@@ -159,7 +162,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     id: 'sing-to-the-moon',
     title: 'Sing to the Moon | AI 生成音樂中秋體驗',
     description: '在 2024 年的中秋節，推出了一款由 AI 生成的數位音樂體驗，透過 AI 生成的音樂（Suno）與生命靈數，打造屬於個人的「人生主題曲」，為品牌帶來新的送禮體驗。',
-    image: '/assets/img/projects/sing-to-the-moon-cover.png',
+    image: singToTheMoon,
     website: [{ type: 'official', url: 'https://moon2024.mxlab.space/' }],
     tags: ['Vue', 'Pinia', 'Vue-router', 'Tailwind', 'Vite'],
     date: '2024/09',
@@ -244,7 +247,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     id: 'cp',
     title: 'CLUB Panasonic 會員俱樂部 | 會員系統 X CMS後台管理',
     description: '從 0 到 1 打造以「會員服務」為核心的品牌平台，專注於提升會員體驗（UX）與資料處理的穩定性。全方位會員中心：實作會員加入流程、第三方登入綁定、心得投稿系統、線上報修表單、個人資料編輯CMS 後台開發：針對前台需求建置專屬管理模組，實作文章上稿、心得審核、訊息通知管理等客製化功能。',
-    image: '/assets/img/projects/club-cover.jpg',
+    image: club,
     date: '2023/10 ~ 進行中',
     website: [{ type: 'official', url: 'https://club.panasonic.tw' }],
     tags: ['Vue', 'Vuex', 'Vuetify', 'Vue-router', 'Webpack', 'Vite'],
@@ -379,7 +382,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     title: 'Panasonic 住空間美學 | 品牌網站建置 x 風格測驗',
     date: '2023/02 ~ 2025/12',
     description: '為松下住空間美學建置品牌網站，並開發風格測驗功能，提升使用者互動與品牌體驗。', //TODO
-    image: '/assets/img/projects/living-cover.jpg',
+    image: lifeStyle,
     tags: ['Vue', 'Pinia', 'Vite', 'Webpack', 'Stylus', 'GSAP', 'Pug'],
     website: [
       { type: 'official', url: 'https://pstw.panasonic.com.tw/housing/life-style-match/diagnose.html' },
@@ -507,7 +510,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     id: 'ican',
     title: 'ICAN | 品牌高動效官網建置',
     description: '打造一個動畫體驗與響應式設計有高需求的品牌官網，搭配使用 GSAP 與 Tailwind，針對每個頁面設計的動效需求，提升使用者瀏覽時的互動趣味性與品牌質感。',
-    image: '/assets/img/projects/ican-cover.png',
+    image: ican,
     tags: ['Pug', 'Stylus', 'Tailwind', 'GSAP', 'Vite'],
     date: '2024/02 ~ 2024/03',
     itemList: [
@@ -607,7 +610,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     id: 'solc',
     title: '天主教中華聖母基金會 | 高動效一頁式募款活動網站',
     description: '在不到一個月的短暫時程內，打造一個具備情感溫度與豐富視覺動效的募款活動網站。透過組件化開發與 GSAP 動效與設計深度協作，還原「家」的氛圍，並整合數據追蹤優化募款成效。',
-    image: '/assets/img/projects/solc-cover.jpg',
+    image: solc,
     tags: ['Pug', 'Tailwind', 'GSAP', 'Vite', 'GA4'],
     date: '2025/09',
     website: [{ type: 'official', url: 'https://www.solc.org.tw/love-chiayi-donate' }],
@@ -647,5 +650,4 @@ export const PROJECT_LIST: ProjectItem[] = [
       }
     ]
   }
-
 ];
