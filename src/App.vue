@@ -31,17 +31,15 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="w-full" :class="router.currentRoute.value.name === 'ProjectPage' ? 'page-project' : ''">
+  <main :class="router.currentRoute.value.name === 'ProjectPage' ? 'page-project' : ''">
     <button
-      class="fixed top-5 right-5 z-50 rounded-full border border-accent bg-primary px-4 py-2 text-sm font-bold text-light shadow-lg transition-colors hover:bg-accent"
+      class="fixed top-5 right-5 z-50 rounded-full cursor-pointer border border-accent bg-primary px-4 py-2 text-sm font-bold text-light transition-colors hover:bg-accent"
       :aria-label="themeMode === 'dark' ? '切換為淺色模式' : '切換為深色模式'"
       @click="handleToggleTheme"
     >
       {{ themeMode === 'dark' ? '淺色模式' : '深色模式' }}
     </button>
-    <transition name="fade" mode="out-in">
-      <RouterView />
-    </transition>
+    <RouterView />
     <Footer />
   </main>
 </template>

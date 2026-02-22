@@ -60,7 +60,7 @@ onUnmounted(() => {
             <h1 class="text-3xl font-bold mb-5">{{ projectItem?.title }}</h1>
             <p>{{ projectItem?.description }}</p>
             <div class="flex gap-2 mt-5">
-              <div v-for="(tag, index) in projectItem?.tags" :key="index" class="inline-block px-2 py-1 rounded-full bg-accent text-contrast text-sm">{{ tag }}</div>
+              <div v-for="(tag, index) in projectItem?.tags" :key="index" class="inline-block px-2 py-1 rounded-full bg-primary text-contrast text-sm">{{ tag }}</div>
             </div>
             <p class="text-muted text-sm mt-2 text-right">{{ projectItem?.date }}</p>
             <a v-if="officialWebsite" :href="officialWebsite.url" target="_blank" class="block mt-5 w-fit ml-auto hover:text-accent transition-colors">
@@ -92,7 +92,7 @@ onUnmounted(() => {
             </ul>
           </div>
         </section>
-        <router-link to="/" class="flex items-center gap-2 w-fit bg-primary text-light p-4 rounded-full mt-10 hover:bg-accent transition-colors">
+        <router-link to="/" class="flex items-center gap-2 w-fit bg-primary text-light p-4 rounded-full mt-10 hover:bg-accent hover:text-white transition-colors">
          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M12 8L8 12L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

@@ -63,8 +63,9 @@ export interface ProjectItem {
   website?: ProjectWebsite[];
 }
 
+// 工作經驗型別
 export interface ExperienceItem {
-  id: number;
+  id: string;
   jobTitle: string;
   date: string;
   description: any;
