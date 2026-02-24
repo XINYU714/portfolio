@@ -14,7 +14,7 @@ const props = defineProps<{
         <h1 class="text-lg font-bold text-light line-clamp-1">{{ item.title }}</h1>
         <p class="text-sm text-muted mt-2 line-clamp-2">{{ item.description }}</p>
         <div class="flex items-center flex-wrap gap-2 mt-2">
-            <p v-for="tag in item.tags" :key="tag" class="rounded-full bg-primary text-light text-sm px-2 py-1 whitespace-nowrap">{{ tag }}</p>
+            <p v-for="tag in item.tags" :key="tag" class="tag">{{ tag }}</p>
         </div>
       </div>
     </div>

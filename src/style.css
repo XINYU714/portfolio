@@ -59,6 +59,6 @@
   }
 
   .tag {
-    @apply inline-block px-2 py-1 rounded-full bg-primary text-contrast text-sm;
+    @apply inline-block px-2 py-1 rounded-full bg-primary text-light text-sm whitespace-nowrap;
   }
 }

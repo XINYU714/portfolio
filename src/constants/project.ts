@@ -1,15 +1,5 @@
 import type { ProjectItem } from '@/types';
-import joinToEnjoy from '@/assets/img/projects/join-to-enjoy-cover.jpg';
-import singToTheMoon from '@/assets/img/projects/sing-to-the-moon-cover.png';
-import club from '@/assets/img/projects/club-cover.jpg';
-import lifeStyle from '@/assets/img/projects/life-style-cover.jpg';
-import ican from '@/assets/img/projects/ican-cover.png';
-import solc from '@/assets/img/projects/solc-cover.jpg';
-import mx from '@/assets/img/projects/mx-cover.jpg';
-import mxDesign from '@/assets/img/projects/mx-design.png';
-import moonShare from '@/assets/img/projects/moon-share.png';
-import saving from '@/assets/img/projects/saving-cover.jpg';
-import savingLayout from '@/assets/img/projects/saving.png'
+import { PROJECT_IMAGES } from './projectImages';
 
 
 export const PROJECT_LIST: ProjectItem[] = [
@@ -17,7 +7,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     id: 'join-to-enjoy',
     title: '優勢韌力探索平台 | 從 0 到 1 建置 B2B 平台',
     description: '透過線上優勢韌力專業量表來自我探索，整合「優勢韌力測驗」、「預約排程」、「數據報表」等功能，一站式平台解決原本由人工填寫、排程、報表分散不同地方的痛點。',
-    image: joinToEnjoy,
+    image: PROJECT_IMAGES.joinToEnjoy,
     tags: ['Vue', 'Vuetify', 'Chart.js', 'Pinia', 'CI/CD'],
     date: '2024/11 ~ 進行中',
     itemList: [
@@ -93,7 +83,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '兼顧數據圖表閱讀趣味性的同時，透過按需載入有效降低首屏資源請求量，顯著提升網頁渲染效能與使用者體驗，並且透過組件化設計減少一半重複開發時間，大幅提升後期維護成本。'
+        content: '兼顧數據圖表閱讀趣味性的同時，透過按需載入有效降低首屏資源請求量，顯著提升網頁渲染效能與使用者體驗，並且透過組件化設計減少一半重複開發時間，大幅降低後期維護成本。'
       },
       {
         type: 'title',
@@ -174,14 +164,14 @@ export const PROJECT_LIST: ProjectItem[] = [
         content: '更多關於練息場官網',
         path: 'https://www.jointoenjoy.com/',
       },
-      
+
     ]
   },
   {
     id: 'sing-to-the-moon',
     title: 'Sing to the Moon | AI 生成音樂中秋體驗',
     description: '在 2024 年的中秋節，推出了一款由 AI 生成的數位音樂體驗，透過 AI 生成的音樂（Suno）與生命靈數的結合，打造屬於個人的「人生主題曲」，為品牌帶來新的送禮體驗。',
-    image: singToTheMoon,
+    image: PROJECT_IMAGES.singToTheMoon,
     // website: [{ type: 'official', url: 'https://moon2024.mxlab.space/' }],
     tags: ['Vue', 'Pinia', 'Vue-router', 'Tailwind CSS', 'Vite'],
     date: '2024/09',
@@ -221,7 +211,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       {
         type: 'image',
         content: '分享至社群平台讓大家體驗創造個人主題曲！',
-        path: moonShare
+        path: PROJECT_IMAGES.moonShare
       },
       {
         type: 'subtitle',
@@ -276,7 +266,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     id: 'cp',
     title: 'CLUB Panasonic 會員俱樂部 | 會員系統 X CMS後台管理',
     description: '從 0 到 1 打造以「會員服務」為核心的品牌平台，專注於提升會員體驗（UX）與資料處理的穩定性。打造全方位的會員中心，包含：會員加入、第三方登入 / 綁定、心得投稿系統、線上報修表單、個人資料編輯等等，後台管理系統開發：針對前台客戶需求建置專屬的管理模組，像是文章上稿、心得審核、訊息通知管理等客製化功能。',
-    image: club,
+    image: PROJECT_IMAGES.club,
     date: '2023/10 ~ 進行中',
     website: [{ type: 'official', url: 'https://club.panasonic.tw' }],
     tags: ['Vue', 'Vuex', 'Vuetify', 'Vue-router', 'Webpack', 'Vite'],
@@ -410,8 +400,8 @@ export const PROJECT_LIST: ProjectItem[] = [
     id: 'life-style',
     title: 'Panasonic 住空間美學 | 品牌網站建置 x 風格測驗',
     date: '2023/02 ~ 2025/12',
-    description: '起初為松下住空間美學建置動效品牌網站，於後期的業務需求新增風格測驗單元，透過技術遷移加速開發流程，兼具使用者互動與品牌體驗。', 
-    image: lifeStyle,
+    description: '起初為松下住空間美學建置動效品牌網站，於後期的業務需求新增風格測驗單元，透過技術遷移加速開發流程，兼具使用者互動與品牌體驗。',
+    image: PROJECT_IMAGES.lifeStyle,
     tags: ['Vue', 'Pinia', 'Vite', 'Webpack', 'Stylus', 'GSAP', 'Pug'],
     website: [
       { type: 'official', url: 'https://pstw.panasonic.com.tw/housing/life-style-match/diagnose.html' },
@@ -508,6 +498,11 @@ export const PROJECT_LIST: ProjectItem[] = [
         content: '選用 Vite 與 Vue 3 建立高效開發環境，並透過 Pinia 實作全域狀態管理，精準追蹤用戶測驗進度並進行結果邏輯判定。利用 Pug Mixin 封裝通用組件，實現 Webpack 與 Vite 雙版本共用同一份 Header/Footer 代碼；並透過 Vite Alias 配置，直接引用舊有專案資源，達成圖片素材的單一來源管理。'
       },
       {
+        type: 'image',
+        content: '透過store 儲存當前使用者所選選項',
+        path: PROJECT_IMAGES.lifeStyleQuiz
+      },
+      {
         type: 'subtitle',
         content: '實作自動化頁面渲染 (MPA)',
       },
@@ -539,7 +534,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     id: 'ican',
     title: 'ICAN | 品牌高動效官網建置',
     description: '打造一個動畫體驗與響應式設計有高需求的品牌官網，搭配使用 GSAP 與 Tailwind CSS，針對每個頁面設計的動效需求，提升使用者瀏覽時的互動趣味性與品牌質感。',
-    image: ican,
+    image: PROJECT_IMAGES.ican,
     tags: ['Pug', 'Stylus', 'Tailwind CSS', 'GSAP', 'Vite'],
     date: '2024/02 ~ 2024/03',
     website: [{ type: 'official', url: 'https://www.ican.com.tw/' }],
@@ -641,7 +636,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     id: 'solc',
     title: '天主教中華聖母基金會 | 高動效一頁式募款活動網站',
     description: '在不到一個月的短暫時程內，打造一個具備情感溫度與豐富視覺動效的募款活動網站。透過組件化開發與 GSAP 動效與設計深度協作，體現「家」的氛圍，並整合數據追蹤募款成效。',
-    image: solc,
+    image: PROJECT_IMAGES.solc,
     tags: ['Pug', 'Tailwind CSS', 'GSAP', 'Vite', 'GA4'],
     date: '2025/09',
     website: [{ type: 'official', url: 'https://www.solc.org.tw/love-chiayi-donate' }],
@@ -686,14 +681,14 @@ export const PROJECT_LIST: ProjectItem[] = [
     title: 'MX | 官網改版',
     date: '2024/04 ~ 2025/11',
     description: '重構現有的官網，將作品頁面轉換具模組化的開發模式，為後續維運打造一套標準化開發流程。',
-    image: mx,
+    image: PROJECT_IMAGES.mx,
     website: [{ type: 'official', url: 'https://mx-digi.com/' }],
     tags: ['Vue', 'Pug', 'Webpack'],
     itemList: [
       {
         type: 'title',
         content: '高擴展性作品集 CMS 模組化架構'
-      }, 
+      },
       {
         type: 'quote',
         content: '挑戰：公司官網因長期未更新導致品牌形象落後，且缺乏統一的作品展示架構。所以如何在短時間內建立一套能相容於未來所有新專案且具備高度彈性的展示模板，讓團隊能快速且大量地產出「作品案例」，同時確保設計風格與開發邏輯的高度一致。'
@@ -713,7 +708,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       {
         type: 'image',
         content: '每個作品頁面保有該專案的專屬色系',
-        path: mxDesign
+        path: PROJECT_IMAGES.mxDesign
       },
       {
         type: 'subtitle',
@@ -731,7 +726,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     title: 'Side Project 儲蓄管理 | 開發中',
     date: '2025/11',
     description: '使用 React、Typescript、MUI 、Supabase 開發，在日常生活中有時候都需要記帳。從原來試算表的轉移至此，自動生成相關圖表以及考量安全性問題，有限制白名單，確保非名單人員使用此儲蓄管理。',
-    image: saving,
+    image: PROJECT_IMAGES.saving,
     tags: ['React', 'Typescript', 'MUI', 'Supabase', 'MCP'],
     itemList: [
       {
@@ -749,7 +744,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       {
         type: 'image',
         content: '目前介面設計（待優化）',
-        path: savingLayout
+        path: PROJECT_IMAGES.savingLayout
       }
     ],
   }

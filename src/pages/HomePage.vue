@@ -17,8 +17,7 @@ const contactLinks = [
   <section class="bg-primary">
     <div class="main-container py-20">
       <div class="py-10">
-          <h1 class="text-4xl lg:text-6xl font-bold uppercase">Hi, I'm 
-            <span class="switch-text">Stacy</span>.</h1>  
+          <h1 class="text-4xl lg:text-6xl font-bold uppercase">Hi, I'm Stacy.</h1>  
           <p class="text-xl text-accent">Frontend Developer</p>
         </div>
         <div class="text-body lg:max-w-1/2 pb-5">
