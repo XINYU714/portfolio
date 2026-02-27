@@ -8,7 +8,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     title: '優勢韌力探索平台 | 從 0 到 1 建置 B2B 平台',
     description: '透過線上優勢韌力專業量表來自我探索，整合「優勢韌力測驗」、「預約排程」、「數據報表」等功能，一站式平台解決原本由人工填寫、排程、報表分散不同地方的痛點。',
     image: PROJECT_IMAGES.joinToEnjoy,
-    tags: ['Vue', 'Vuetify', 'Chart.js', 'Pinia', 'CI/CD'],
+    tags: ['Vue', 'Vuetify', 'Chart.js', 'Pinia', 'CI/CD', 'Chart.js', 'Vite'],
     date: '2024/11 ~ 進行中',
     itemList: [
       {
@@ -120,7 +120,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'title',
-        content: '問卷管理系統與數據整合',
+        content: 'All-In-One 問卷管理系統與數據整合',
       },
       {
         type: 'quote',
@@ -149,7 +149,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '成功將第三方問卷需求移轉至自有平台，達成 All-in-one 的整合目標，降低了組織的跨系統管理成本與解決業務需求，透過拖拽式 UI 設計，顯著優化了問卷製作的流程，獲得後台管理使用者的高度滿意。',
+        content: '成功將第三方問卷需求移轉至自有平台，達成 All-In-One 的整合目標，降低了組織的跨系統管理成本與解決業務需求，透過拖拽式 UI 設計，顯著優化了問卷製作的流程，獲得後台管理使用者的高度滿意。',
       },
       {
         type: 'title',
@@ -173,7 +173,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     description: '在 2024 年的中秋節，推出了一款由 AI 生成的數位音樂體驗，透過 AI 生成的音樂（Suno）與生命靈數的結合，打造屬於個人的「人生主題曲」，為品牌帶來新的送禮體驗。',
     image: PROJECT_IMAGES.singToTheMoon,
     // website: [{ type: 'official', url: 'https://moon2024.mxlab.space/' }],
-    tags: ['Vue', 'Pinia', 'Vue-router', 'Tailwind CSS', 'Vite'],
+    tags: ['Vue', 'Pinia', 'Tailwind CSS', 'Vite'],
     date: '2024/09',
     itemList: [
       {
@@ -264,12 +264,12 @@ export const PROJECT_LIST: ProjectItem[] = [
   },
   {
     id: 'cp',
-    title: 'CLUB Panasonic 會員俱樂部 | 會員系統 X CMS後台管理',
+    title: 'CLUB Panasonic 會員俱樂部 | 會員系統 X CMS 後台管理',
     description: '從 0 到 1 打造以「會員服務」為核心的品牌平台，專注於提升會員體驗（UX）與資料處理的穩定性。打造全方位的會員中心，包含：會員加入、第三方登入 / 綁定、心得投稿系統、線上報修表單、個人資料編輯等等，後台管理系統開發：針對前台客戶需求建置專屬的管理模組，像是文章上稿、心得審核、訊息通知管理等客製化功能。',
     image: PROJECT_IMAGES.club,
     date: '2023/10 ~ 進行中',
     website: [{ type: 'official', url: 'https://club.panasonic.tw' }],
-    tags: ['Vue', 'Vuex', 'Vuetify', 'Vue-router', 'Webpack', 'Vite'],
+    tags: ['Vue', 'Vuex', 'Vuetify', 'Webpack', 'Vite'],
     itemList: [
       {
         type: 'title',
@@ -399,7 +399,7 @@ export const PROJECT_LIST: ProjectItem[] = [
   {
     id: 'life-style',
     title: 'Panasonic 住空間美學 | 品牌網站建置 x 風格測驗',
-    date: '2023/02 ~ 2025/12',
+    date: '2023/05 ~ 2025/12',
     description: '起初為松下住空間美學建置動效品牌網站，於後期的業務需求新增風格測驗單元，透過技術遷移加速開發流程，兼具使用者互動與品牌體驗。',
     image: PROJECT_IMAGES.lifeStyle,
     tags: ['Vue', 'Pinia', 'Vite', 'Webpack', 'Stylus', 'GSAP', 'Pug'],
@@ -409,7 +409,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     itemList: [
       {
         type: 'title',
-        content: '品牌動效網站建置 | 2023 / 02 - 2023 / 06'
+        content: '品牌動效網站建置 | 2023 / 05 - 2023 / 06'
       },
       {
         type: 'quote',
@@ -454,11 +454,11 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'subtitle',
-        content: '精細化資源壓縮與格式轉換',
+        content: '精細化資源壓縮',
       },
       {
         type: 'content',
-        content: '重新對設計端提供的高畫質圖檔進行深度壓縮與格式轉換，在維持視覺無損的要求下，大幅削減資源體積，確保在各種網絡環境下皆能快速加載。',
+        content: '重新對設計端提供的高畫質圖檔進行深度壓縮，在維持視覺無損的要求下，大幅削減資源體積，確保在各種網絡環境下皆能快速加載。',
       },
       {
         type: 'subtitle',
@@ -466,7 +466,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '整合 vanilla-lazyload 插件實作延遲加載，並搭配資源請求優先級配置，確保關鍵品牌視覺優先呈現，提升 FMP（首次有效繪製）的速度，避免一次性加載所有素材造成頻寬壓力。',
+        content: '整合 vanilla-lazyload 插件實作延遲加載，並搭配資源請求優先級配置，確保關鍵品牌視覺優先呈現，提升初始畫面加載的速度，避免一次性加載所有素材造成頻寬壓力。',
       },
       {
         type: 'subtitle',
@@ -479,11 +479,11 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'title',
-        content: '品牌風格網站單元建置 | 2025 /04 ~ 2025 / 05',
+        content: '品牌風格網站單元建置 | 2025 / 04 ~ 2025 / 05',
       },
       {
         type: 'quote',
-        content: '挑戰：既有的 Webpack / Pug 靜態架構下，需新增一個「風格測驗」單元，如何在不影響舊有系統的前提下，導入 Vite + Vue 3 的現代化開發架構，並解決新舊環境間資源（Header / Footer、圖片素材）的共享問題，同時需高效產出十數頁結構相近的測驗結果頁。',
+        content: '挑戰：既有的 Webpack / Pug 靜態架構下，需新增一個「風格測驗」單元，如何在不影響舊有系統的前提下，導入 Vite + Vue 3 的開發架構，並解決新舊環境間資源（Header / Footer、圖片素材）的共享問題，同時需高效產出十數頁結構相近的測驗結果頁。',
       },
       {
         type: 'title',
@@ -495,11 +495,11 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '選用 Vite 與 Vue 3 建立高效開發環境，並透過 Pinia 實作全域狀態管理，精準追蹤用戶測驗進度並進行結果邏輯判定。利用 Pug Mixin 封裝通用組件，實現 Webpack 與 Vite 雙版本共用同一份 Header/Footer 代碼；並透過 Vite Alias 配置，直接引用舊有專案資源，達成圖片素材的單一來源管理。'
+        content: '選用 Vite 與 Vue 3 建立高效開發環境，並透過 Pinia 實作全域狀態管理，精準追蹤用戶測驗進度並進行結果邏輯判定。利用 Pug Mixin 封裝通用組件，實現 Webpack 與 Vite 雙版本共用同一份 Header / Footer 組件，並透過 Vite Alias 配置，直接引用現有專案資源，達成圖片素材與功能單一來源管理。'
       },
       {
         type: 'image',
-        content: '透過store 儲存當前使用者所選選項',
+        content: '透過 Pinia 儲存當前使用者所選選項',
         path: PROJECT_IMAGES.lifeStyleQuiz
       },
       {
@@ -516,7 +516,11 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '採用「數據驅動」的模式，將測驗資料與頁面組件徹底分離。透過集中管理資料檔，實現「改資料不改程式碼」的高可維護性架構。'
+        content: '將測驗資料與頁面組件徹底分離。透過集中管理資料檔，實現「改資料不改程式碼」的高可維護性架構，有助於後續多題目與選項的文案更新。'
+      },
+      {
+        type: 'image',
+        path: PROJECT_IMAGES.lifeStyleData,
       },
       {
         type: 'subtitle',
@@ -683,7 +687,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     description: '重構現有的官網，將作品頁面轉換具模組化的開發模式，為後續維運打造一套標準化開發流程。',
     image: PROJECT_IMAGES.mx,
     website: [{ type: 'official', url: 'https://mx-digi.com/' }],
-    tags: ['Vue', 'Pug', 'Webpack'],
+    tags: ['Vue', 'Pug', 'Stylus', 'Webpack'],
     itemList: [
       {
         type: 'title',
@@ -720,6 +724,57 @@ export const PROJECT_LIST: ProjectItem[] = [
         content: '透過組件化模板，將單一作品頁面的開發時程縮短至僅需原本的 1/3，達成快速累積作品量的商業目標。透過標準化流程降低後續維護的成本。'
       }
     ],
+  },
+   {
+    id: 'cms-demo',
+    title: 'CMS 產品示範平台 | Tailwind CSS 導入',
+    description: '主導 CMS 前台切版與更新前台公版的架構，將 Stylus 遷移至 Tailwind CSS，簡化樣式檔的體積，並建立新的開發流程。',
+    image: PROJECT_IMAGES.mxDemoCover,
+    tags: ['Pug', 'Tailwind CSS', 'Vite'],
+    date: '2023/07 ~ 2023/08',
+    itemList: [
+      {
+        type: 'title',
+        content: '模組化架構建置與樣式系統遷移',
+      },
+      {
+        type: 'quote',
+        content: '挑戰：協助公司業務對接，需在兩個月內快速打造一套功能完備的 CMS 產品展示 DEMO 平台。內容涵蓋首頁、列表、消息及複雜的文章內容頁，且必須建立一套能高度對應套版的「組件化」系統，以便呈現多圖、連結、列表等多元內容。同時，專案需負責將原有的 <b>Stylus</b> 樣式體系全面遷移至 <b>Tailwind CSS</b>，以提升後續的開發效率與樣式一致性。',
+      },
+      {
+        type: 'subtitle',
+        content: '高性能組建模組化設計',
+      },
+      {
+        type: 'content',
+        content: '針對文章內容頁設計高度抽象的組件體系，開發包含多圖、單圖、連結、列表在內的多元元件庫，確保能精準對接 CMS 後台的格式。',
+      },
+      {
+        type: 'subtitle',
+        content: '樣式系統現代化遷移',
+      },
+      {
+        type: 'content',
+        content: '主導將既有的 Stylus 預處理器工作流遷移至 <b>Tailwind CSS</b>，利用 Utility-first 特性重構 UI 層，大幅減少冗餘 CSS 代碼並建立標準化設計系統',
+      },
+      {
+        type: 'subtitle',
+        content: '快速原型開發與交付',
+      },
+      {
+        type: 'content',
+        content: '在極短時程內完成前台全站切版與交互邏輯，並確保組件具備高度的彈性，以減少因後續需求變動導致的代碼修正成本。',
+      },
+      {
+        type: 'subtitle',
+        content: '開發流程標準化 X 技術升級',
+        class: 'text-accent',
+      },
+      {
+        type: 'content',
+        content: '透過 Tailwind CSS 的導入與組件化設計，建立了一套可複用的開發範本，讓後續相似頁面的建置加速開發。同時，藉由該專案也成功將樣式系統轉型，並應用於後續的專案上。',
+      }
+    ]
   },
   {
     id: 'my-record',

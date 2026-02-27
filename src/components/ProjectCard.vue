@@ -12,10 +12,11 @@ const props = defineProps<{
       <img :src="item.image" alt="" class="w-full h-60 object-cover">
       <div class="p-4">
         <h1 class="text-lg font-bold text-light line-clamp-1">{{ item.title }}</h1>
-        <p class="text-sm text-muted mt-2 line-clamp-2">{{ item.description }}</p>
         <div class="flex items-center flex-wrap gap-2 mt-2">
-            <p v-for="tag in item.tags" :key="tag" class="tag">{{ tag }}</p>
+          <p v-for="tag in item.tags" :key="tag" class="tag">{{ tag }}</p>
         </div>
+        <p class="text-sm text-muted mt-2 line-clamp-2">{{ item.description }}</p>
+        <p class="text-sm text-accent mt-2 text-right">{{ item.date }}</p>
       </div>
     </div>
 </template>

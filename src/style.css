@@ -55,7 +55,7 @@
   }
 
   .main-container {
-    @apply container mx-auto px-5 lg:px-10;
+    @apply container mx-auto px-5 xl:px-10;
   }
 
   .tag {
