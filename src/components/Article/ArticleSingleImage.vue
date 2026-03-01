@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import type { ArticleImageItem } from '@/types'
-
 defineProps<ArticleImageItem>()
 </script>
 <template>

@@ -2,6 +2,7 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue';
 import type { Component } from 'vue';
 import { useRoute } from 'vue-router';
+import type { ArticleType } from '@/types';
 import ArticleTitle from '@/components/Article/ArticleTitle.vue';
 import ArticleContent from '@/components/Article/ArticleContent.vue';
 import ArticleSingleImage from '@/components/Article/ArticleSingleImage.vue';
@@ -11,7 +12,7 @@ import ArticleQuote from '@/components/Article/ArticleQuote.vue';
 import { PROJECT_LIST } from '@/constants/project';
 
 
-const componentMap: Record<string, Component> = {
+const componentMap: Record<ArticleType, Component> = {
   title: ArticleTitle,
   content: ArticleContent,
   image: ArticleSingleImage,

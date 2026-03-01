@@ -1,10 +1,12 @@
+import type { ExperienceItem } from '@/types';
+
 // 工作經驗詳細描述
-export const EXPERIENCE_List = [
+export const EXPERIENCE_LIST: ExperienceItem[] = [
   {
     id: 'mx',
     jobTitle: '前端工程師 | 創意思境 MX',
     date: '2023/03 - 在職中',
-    skills: ['Vue', 'Vuetify', 'Pinia','Tailwind CSS', 'Stylus', 'GSAP', 'Vite', 'Webpack', 'Pug'],
+    skills: ['Vue', 'Vuetify', 'Pinia', 'Tailwind CSS', 'Stylus', 'GSAP', 'Vite', 'Webpack', 'Pug'],
     description: {
       summary: '主導多項網站開發與維運，包含<b>品牌官網、後台系統、動效網頁</b>，致力於建構<span class="text-accent font-bold">高性能、模組化</span>的 Web 解決方案。',
       sections: [
@@ -13,7 +15,7 @@ export const EXPERIENCE_List = [
           items: [
             {
               title: '跨版本核心遷移 (Vue 2 → Vue 3)',
-              content: '主導公司後台公版升級至 Vue 3 / Vite 6 / Vuetify 3 架構。針對全局程式碼進行重構（如 v-model 雙向綁定邏輯、Router 導航守衛），大幅提升後續開發建置速度。'
+              content: '主導公司後台公版升級至 Vue 3 / Vite 6 / Vuetify 3 架構。針對全局程式碼進行重構（如 v-model 雙向綁定邏輯、Router 導航守衛），大幅降低後續開發建置速度。'
             },
             {
               title: 'CSS 架構演進與規範建立',
@@ -66,7 +68,7 @@ export const EXPERIENCE_List = [
     id: 'goFreight',
     jobTitle: 'Web Engineer Intern | GoFreight',
     date: '2022/02 - 2023/03',
-    skills: ['Wordpress', 'JavaScript', 'RWD', 'SEO', 'GA4'], 
+    skills: ['Wordpress', 'JavaScript', 'RWD', 'SEO', 'GA4'],
     description: {
       summary: '負責公司官網與行銷活動頁面開發與維護，並提升網站效能與佈局 SEO 關鍵字，以提升網站流量。',
       sections: [

@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-const props = defineProps<{
-  content: string;
-}>()
+import type { ArticleQuoteItem } from '@/types';
+const props = defineProps<ArticleQuoteItem>()
 </script>
 
 <template>

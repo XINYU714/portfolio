@@ -2,7 +2,7 @@
 import ProjectCard from '@/components/ProjectCard.vue';
 import ExperienceCard from '@/components/ExperienceCard.vue';
 import { PROJECT_LIST } from '@/constants/project';
-import { EXPERIENCE_List } from '@/constants/experience';
+import { EXPERIENCE_LIST } from '@/constants/experience';
 import { PROFILE } from '@/constants/profile';
 import githubIcon from '@/assets/img/github.svg';
 import emailIcon from '@/assets/img/email.svg';
@@ -41,7 +41,7 @@ const contactLinks = [
   <!-- 經驗區 -->
   <section class="main-container py-10 lg:py-20">
     <h2 class="text-xl font-bold text-light mb-5">工作經歷 | Experience</h2>
-    <ExperienceCard v-for="item in EXPERIENCE_List" :key="item.id" v-bind="item" />
+    <ExperienceCard v-for="item in EXPERIENCE_LIST" :key="item.id" v-bind="item" />
   </section>
   <!-- 專案區 -->
   <section class="main-container py-10">

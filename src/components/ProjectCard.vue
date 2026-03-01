@@ -9,7 +9,7 @@ const props = defineProps<{
 
 <template>
     <div class="border border-accent rounded-lg hover:bg-light/20 active:bg-primary transition-all duration-300 overflow-hidden h-full">
-      <img :src="item.image" alt="" class="w-full h-60 object-cover">
+      <img :src="item.image" alt="" class="w-full h-60 object-cover" width="470" height="240" loading="lazy">
       <div class="p-4">
         <h1 class="text-lg font-bold text-light line-clamp-1">{{ item.title }}</h1>
         <div class="flex items-center flex-wrap gap-2 mt-2">
