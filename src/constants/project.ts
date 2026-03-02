@@ -8,7 +8,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     title: '優勢韌力探索平台 | 從 0 到 1 建置 B2B 平台',
     description: '透過線上優勢韌力專業量表來自我探索，整合「優勢韌力測驗」、「預約排程」、「數據報表」等功能，一站式平台解決原本由人工填寫、排程、報表分散不同地方的痛點。',
     image: PROJECT_IMAGES.joinToEnjoy,
-    tags: ['Vue', 'Vuetify', 'Chart.js', 'Pinia', 'CI/CD', 'Chart.js', 'Vite'],
+    tags: ['Vue', 'Vuetify', 'Pinia', 'CI/CD', 'Vite', 'Chart.js'],
     date: '2024/11 ~ 進行中',
     itemList: [
       {
@@ -132,7 +132,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       },
       {
         type: 'content',
-        content: '設計具擴展性的架構，統一管理單選、多選、程度題及簡答題等多種題型，管理者能在後台自定義配置。同時，搭配 vuedraggable 實作拖拽式介面，讓管理者能直覺地調整題目順序，大幅提升後台操作的流暢度與效率。'
+        content: '設計具擴展性的架構，統一管理單選、多選、程度題及簡答題等多種題型，管理者能在後台自定義配置。同時，搭配 vue draggable 實作拖拽式介面，讓管理者能直覺地調整題目順序，大幅提升後台操作的流暢度與效率。'
       },
       {
         type: 'subtitle',
@@ -725,7 +725,7 @@ export const PROJECT_LIST: ProjectItem[] = [
       }
     ],
   },
-   {
+  {
     id: 'cms-demo',
     title: 'CMS 產品示範平台 | Tailwind CSS 導入',
     description: '主導 CMS 前台切版與更新前台公版的架構，將 Stylus 遷移至 Tailwind CSS，簡化樣式檔的體積，並建立新的開發流程。',

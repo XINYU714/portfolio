@@ -18,7 +18,7 @@ export const EXPERIENCE_LIST: ExperienceItem[] = [
               content: '主導公司後台公版升級至 Vue 3 / Vite 6 / Vuetify 3 架構。針對全局程式碼進行重構（如 v-model 雙向綁定邏輯、Router 導航守衛），大幅降低後續開發建置速度。'
             },
             {
-              title: 'CSS 架構演進與規範建立',
+              title: 'CSS 架構遷移與規範建立',
               content: '推動 Tailwind CSS 導入，透過 Utility-first 開發模式建立 UI 標準化規範，成功縮減全站 CSS 體積並極大化元件重用率。'
             },
             {
@@ -49,7 +49,7 @@ export const EXPERIENCE_LIST: ExperienceItem[] = [
             },
             {
               title: '互動風格測驗',
-              content: '將原本的專案延伸新以 Vue3 + Vite 的架構，運用 Pinia 管理答題邏輯，並透過動態網址判別技術，達成單一架構自動渲染多樣化結果頁面，大幅降低原本使用 Pug + Webpack 的開發速度。'
+              content: '將原本的專案延伸新以 Vue 3 + Vite 的架構，運用 Pinia 管理答題邏輯，並透過動態網址判別技術，達成單一架構自動渲染多樣化結果頁面，大幅降低原本使用 Pug + Webpack 的開發速度。'
             },
             {
               title: '高視覺動效開發',
