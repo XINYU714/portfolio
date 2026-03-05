@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterView, useRoute } from 'vue-router'
-import Footer from '@/components/Footer.vue'
 import { PROJECT_LIST } from '@/constants/project'
 import { PROFILE } from '@/constants/profile'
 import sunIcon from '@/assets/img/sun.svg'

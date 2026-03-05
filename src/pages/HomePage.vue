@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ProjectCard from '@/components/ProjectCard.vue';
-import ExperienceCard from '@/components/ExperienceCard.vue';
 import { PROJECT_LIST } from '@/constants/project';
 import { EXPERIENCE_LIST } from '@/constants/experience';
 import { PROFILE } from '@/constants/profile';
