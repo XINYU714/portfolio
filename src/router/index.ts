@@ -1,7 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '@/pages/HomePage.vue'
-import ProjectPage from '@/pages/ProjectPage.vue'
-import NotFoundPage from '@/pages/NotFoundPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,17 +6,17 @@ const router = createRouter({
     {
       path: '/',
       name: 'HomePage',
-      component: HomePage,
+      component: () => import('@/pages/HomePage.vue'),
     },
     {
       path: '/project/:id',
       name: 'ProjectPage',
-      component: ProjectPage,
+      component: () => import('@/pages/ProjectPage.vue'),
     },
     {
       path: '/:pathMatch(.*)*',
       name: 'NotFoundPage',
-      component: NotFoundPage,
+      component: () => import('@/pages/NotFoundPage.vue'),
     },
   ],
 })

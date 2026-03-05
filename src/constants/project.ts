@@ -164,7 +164,6 @@ export const PROJECT_LIST: ProjectItem[] = [
         content: '更多關於練息場官網',
         path: 'https://www.jointoenjoy.com/',
       },
-
     ]
   },
   {
@@ -531,8 +530,7 @@ export const PROJECT_LIST: ProjectItem[] = [
         type: 'content',
         content: '透過模板化與自動化建構流程，將原本需手動開發的 10 餘個頁面工作量，縮減至僅需維護單一模板。採用結構清晰的資料分離設計，讓後續內容迭代無需修改核心邏輯，大幅降低了長期維護的成本。',
       },
-    ],
-
+    ]
   },
   {
     id: 'ican',
@@ -634,7 +632,7 @@ export const PROJECT_LIST: ProjectItem[] = [
         type: 'content',
         content: '透過 Vite 建構自動化解決了因環境切換導致的資源路徑錯誤問題，顯著提升了部署的穩定性，並且在未來新增其他子頁面時，能直接透過虛擬 HTML 與 EJS 模板快速完成配置，大幅提升了開發效率。'
       }
-    ],
+    ]
   },
   {
     id: 'solc',
@@ -723,7 +721,7 @@ export const PROJECT_LIST: ProjectItem[] = [
         type: 'content',
         content: '透過組件化模板，將單一作品頁面的開發時程縮短至僅需原本的 1/3，達成快速累積作品量的商業目標。透過標準化流程降低後續維護的成本。'
       }
-    ],
+    ]
   },
   {
     id: 'cms-demo',
@@ -801,6 +799,6 @@ export const PROJECT_LIST: ProjectItem[] = [
         content: '目前介面設計（待優化）',
         path: PROJECT_IMAGES.savingLayout
       }
-    ],
+    ]
   }
 ];

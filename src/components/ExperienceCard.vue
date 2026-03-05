@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { ExperienceItem } from '@/types';
 
-const props = defineProps<ExperienceItem>()
+defineProps<ExperienceItem>()
 </script>
 <template>
   <div class="relative pb-5 last:pb-0">

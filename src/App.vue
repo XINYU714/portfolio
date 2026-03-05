@@ -6,15 +6,16 @@ import { PROFILE } from '@/constants/profile'
 import sunIcon from '@/assets/img/sun.svg'
 import moonIcon from '@/assets/img/moon.svg'
 
-
+type ThemeMode = 'dark' | 'light'
 
 const route = useRoute()
 
-type ThemeMode = 'dark' | 'light'
 const THEME_STORAGE_KEY = 'theme-mode'
 const DEFAULT_DESCRIPTION = PROFILE.summary
 const DEFAULT_TITLE = `${PROFILE.siteName} | ${PROFILE.role}`
+
 const themeMode = ref<ThemeMode>('dark')
+
 const projectId = computed(() => (typeof route.params.id === 'string' ? route.params.id : ''))
 const currentProject = computed(() => PROJECT_LIST.find((item) => item.id === projectId.value))
 const isProjectPage = computed(() => route.name === 'ProjectPage')
@@ -76,11 +77,7 @@ const updateHeadMeta = () => {
 onMounted(() => {
   updateHeadMeta()
   const savedTheme = localStorage.getItem(THEME_STORAGE_KEY)
-  if (savedTheme === 'light' || savedTheme === 'dark') {
-    setTheme(savedTheme)
-    return
-  }
-  setTheme('dark')
+  setTheme(savedTheme === 'light' ? 'light' : 'dark')
 })
 
 watch(() => route.fullPath, updateHeadMeta)

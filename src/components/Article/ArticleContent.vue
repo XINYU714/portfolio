@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import type { ArticleContentItem } from '@/types';
-const props = defineProps<ArticleContentItem>()
+
+defineProps<ArticleContentItem>()
 </script>
 
 <template>

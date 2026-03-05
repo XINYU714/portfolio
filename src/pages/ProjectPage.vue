@@ -1,15 +1,16 @@
 <script lang="ts" setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue';
-import type { Component } from 'vue';
 import { useRoute } from 'vue-router';
+import type { Component } from 'vue';
 import type { ArticleType } from '@/types';
+import { PROJECT_LIST } from '@/constants/project';
 import ArticleTitle from '@/components/Article/ArticleTitle.vue';
 import ArticleContent from '@/components/Article/ArticleContent.vue';
 import ArticleSingleImage from '@/components/Article/ArticleSingleImage.vue';
 import ArticleLink from '@/components/Article/ArticleLink.vue';
 import ArticleSubtitle from '@/components/Article/ArticleSubtitle.vue';
 import ArticleQuote from '@/components/Article/ArticleQuote.vue';
-import { PROJECT_LIST } from '@/constants/project';
+
 
 
 const componentMap: Record<ArticleType, Component> = {
@@ -35,9 +36,9 @@ const intersectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const allTitles = Array.from(document.querySelectorAll('.article-title'));
-      const index = allTitles.indexOf(entry.target);
-      if (index !== -1) {
-        activeIndex.value = index;
+      const titleIndex = allTitles.indexOf(entry.target);
+      if (titleIndex !== -1) {
+        activeIndex.value = titleIndex;
       }
     }
   })
