@@ -1,35 +1,23 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { RouterView, useRoute } from 'vue-router'
+import { useDark, useToggle } from '@vueuse/core'
 import { PROJECT_LIST } from '@/constants/project'
 import { PROFILE } from '@/constants/profile'
 import sunIcon from '@/assets/img/sun.svg'
 import moonIcon from '@/assets/img/moon.svg'
 
-type ThemeMode = 'dark' | 'light'
-
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 const route = useRoute()
 
-const THEME_STORAGE_KEY = 'theme-mode'
 const DEFAULT_DESCRIPTION = PROFILE.summary
 const DEFAULT_TITLE = `${PROFILE.siteName} | ${PROFILE.role}`
 
-const themeMode = ref<ThemeMode>('dark')
 
 const projectId = computed(() => (typeof route.params.id === 'string' ? route.params.id : ''))
 const currentProject = computed(() => PROJECT_LIST.find((item) => item.id === projectId.value))
 const isProjectPage = computed(() => route.name === 'ProjectPage')
-
-const setTheme = (mode: ThemeMode) => {
-  themeMode.value = mode
-  document.documentElement.classList.toggle('dark', mode === 'dark')
-}
-
-const handleToggleTheme = () => {
-  const nextMode: ThemeMode = themeMode.value === 'dark' ? 'light' : 'dark'
-  setTheme(nextMode)
-  localStorage.setItem(THEME_STORAGE_KEY, nextMode)
-}
 
 const getOrCreateMetaTag = (key: string, attr: 'name' | 'property') => {
   let meta = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`)
@@ -76,8 +64,6 @@ const updateHeadMeta = () => {
 
 onMounted(() => {
   updateHeadMeta()
-  const savedTheme = localStorage.getItem(THEME_STORAGE_KEY)
-  setTheme(savedTheme === 'light' ? 'light' : 'dark')
 })
 
 watch(() => route.fullPath, updateHeadMeta)
@@ -87,10 +73,10 @@ watch(() => route.fullPath, updateHeadMeta)
   <main :class="isProjectPage ? 'page-project' : ''">
     <button
       class="fixed top-5 right-5 z-50 rounded-full p-2 transition-colors bg-accent hover:bg-accent/75 cursor-pointer"
-      :aria-label="themeMode === 'dark' ? '切換為淺色模式' : '切換為深色模式'"
-      @click="handleToggleTheme"
+      :aria-label="isDark ? '切換為淺色模式' : '切換為深色模式'"
+      @click="toggleDark()"
     >
-      <img v-if="themeMode === 'dark'" :src="moonIcon" alt="深色模式" width="20" height="20">
+      <img v-if="isDark" :src="moonIcon" alt="深色模式" width="20" height="20">
       <img v-else :src="sunIcon" alt="淺色模式" width="20" height="20">
     </button>
     <RouterView />
