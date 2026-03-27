@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-const year = new Date().getFullYear();
+import { useDateFormat, useNow } from '@vueuse/core'
+const year = useDateFormat(useNow(), 'YYYY')
 </script>
 
 <template>

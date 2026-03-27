@@ -8,7 +8,7 @@ import sunIcon from '@/assets/img/sun.svg'
 import moonIcon from '@/assets/img/moon.svg'
 
 const isDark = useDark()
-const toggleDark = useToggle(isDark)
+const handleToggleDark = useToggle(isDark)
 const route = useRoute()
 
 const DEFAULT_DESCRIPTION = PROFILE.summary
@@ -72,12 +72,11 @@ watch(() => route.fullPath, updateHeadMeta)
 <template>
   <main :class="isProjectPage ? 'page-project' : ''">
     <button
-      class="fixed top-5 right-5 z-50 rounded-full p-2 transition-colors bg-accent hover:bg-accent/75 cursor-pointer"
       :aria-label="isDark ? '切換為淺色模式' : '切換為深色模式'"
-      @click="toggleDark()"
+      @click="handleToggleDark()"
+      class="fixed top-5 right-5 z-50 rounded-full p-2 transition-colors bg-accent hover:bg-accent/75 cursor-pointer"
     >
-      <img v-if="isDark" :src="moonIcon" alt="深色模式" width="20" height="20">
-      <img v-else :src="sunIcon" alt="淺色模式" width="20" height="20">
+      <img :src="isDark ? moonIcon : sunIcon" :alt="isDark ? '深色模式' : '淺色模式'" width="20" height="20">
     </button>
     <RouterView />
     <Footer />

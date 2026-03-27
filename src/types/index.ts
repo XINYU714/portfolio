@@ -1,6 +1,4 @@
-// 定義 CMS 內容類型
 export type ArticleType = 'title' | 'content' | 'image' | 'link' | 'subtitle' | 'quote';
-
 export interface ArticleBaseItem {
   type: ArticleType;
   class?: string;
