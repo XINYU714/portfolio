@@ -1,14 +1,19 @@
 <script lang="ts" setup>
+import { useElementVisibility } from '@vueuse/core'
+import { useTemplateRef } from 'vue'
 import type { ProjectItem } from '@/types';
 
-defineProps<{
-  item: ProjectItem
-}>()
+defineProps<{ item: ProjectItem }>()
 
+const cardRef = useTemplateRef<HTMLElement>('cardRef')
+const isVisible = useElementVisibility(cardRef)
 </script>
 
 <template>
-    <div class="border border-accent rounded-lg hover:bg-light/20 active:bg-primary transition-all duration-300 overflow-hidden h-full">
+    <div ref="cardRef"
+      class="border border-accent rounded-lg hover:bg-light/20 active:bg-primary transition-all duration-300 overflow-hidden h-full"
+      :class="isVisible ? 'animate-fade-in' : 'opacity-0'"
+    >
       <img :src="item.image" alt="" class="w-full h-60 object-cover" width="470" height="240" loading="lazy">
       <div class="p-4">
         <h1 class="text-lg font-bold text-light line-clamp-1">{{ item.title }}</h1>

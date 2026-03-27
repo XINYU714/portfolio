@@ -267,7 +267,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     description: '從 0 到 1 打造以「會員服務」為核心的品牌平台，專注於提升會員體驗（UX）與資料處理的穩定性。打造全方位的會員中心，包含：會員加入、第三方登入 / 綁定、心得投稿系統、線上報修表單、個人資料編輯等等，後台管理系統開發：針對前台客戶需求建置專屬的管理模組，像是文章上稿、心得審核、訊息通知管理等客製化功能。',
     image: PROJECT_IMAGES.club,
     date: '2023/10 ~ 進行中',
-    website: [{ type: 'official', url: 'https://club.panasonic.tw' }],
+    website: { official: 'https://club.panasonic.tw' },
     tags: ['Vue', 'Vuex', 'Vuetify', 'Webpack', 'Vite'],
     itemList: [
       {
@@ -402,9 +402,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     description: '起初為松下住空間美學建置動效品牌網站，於後期的業務需求新增風格測驗單元，透過技術遷移加速開發流程，兼具使用者互動與品牌體驗。',
     image: PROJECT_IMAGES.lifeStyle,
     tags: ['Vue', 'Pinia', 'Vite', 'Webpack', 'Stylus', 'GSAP', 'Pug'],
-    website: [
-      { type: 'official', url: 'https://pstw.panasonic.com.tw/housing/life-style-match/diagnose.html' },
-    ],
+    website: { official: 'https://pstw.panasonic.com.tw/housing/life-style-match/diagnose.html' },
     itemList: [
       {
         type: 'title',
@@ -539,7 +537,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     image: PROJECT_IMAGES.ican,
     tags: ['Pug', 'Stylus', 'Tailwind CSS', 'GSAP', 'Vite'],
     date: '2024/02 ~ 2024/03',
-    website: [{ type: 'official', url: 'https://www.ican.com.tw/' }],
+    website: { official: 'https://www.ican.com.tw/' },
     itemList: [
       {
         type: 'title',
@@ -641,7 +639,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     image: PROJECT_IMAGES.solc,
     tags: ['Pug', 'Tailwind CSS', 'GSAP', 'Vite', 'GA4'],
     date: '2025/09',
-    website: [{ type: 'official', url: 'https://www.solc.org.tw/love-chiayi-donate' }],
+    website: { official: 'https://www.solc.org.tw/love-chiayi-donate' },
     itemList: [
       {
         type: 'title',
@@ -684,7 +682,7 @@ export const PROJECT_LIST: ProjectItem[] = [
     date: '2024/04 ~ 2025/11',
     description: '重構現有的官網，將作品頁面轉換具模組化的開發模式，為後續維運打造一套標準化開發流程。',
     image: PROJECT_IMAGES.mx,
-    website: [{ type: 'official', url: 'https://mx-digi.com/' }],
+    website: { official: 'https://mx-digi.com/' },
     tags: ['Vue', 'Pug', 'Stylus', 'Webpack'],
     itemList: [
       {

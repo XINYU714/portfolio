@@ -46,8 +46,8 @@ export type ArticleItem =
   | ArticleQuoteItem;
 
 export interface ProjectWebsite {
-  type: string;
-  url: string;
+  official?: string;
+  github?: string;
 }
 
 export interface ProjectItem {
@@ -58,7 +58,7 @@ export interface ProjectItem {
   tags: string[];
   date: string;
   itemList: ArticleItem[];
-  website?: ProjectWebsite[];
+  website?: ProjectWebsite;
 }
 
 // 工作經驗詳細型別

@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { useDark, useToggle } from '@vueuse/core'
 import { computed, onMounted, watch } from 'vue'
 import { RouterView, useRoute } from 'vue-router'
-import { useDark, useToggle } from '@vueuse/core'
 import { PROJECT_LIST } from '@/constants/project'
 import { PROFILE } from '@/constants/profile'
 import sunIcon from '@/assets/img/sun.svg'
